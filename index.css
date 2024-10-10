@@ -1,0 +1,152 @@
+/* Reset các thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Tiêu đề trang */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Container chính */
+div {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Bảng */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #16a085;
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Các tiêu đề đặc biệt cho các bảng */
+#itemListByDateTable th {
+    background-color: #3498db;
+}
+
+#warehouseDetailList th {
+    background-color: #e67e22;
+}
+
+/* Form */
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Ẩn form tạo phiếu */
+#receiptForm {
+    display: none;
+}
+
+/* Bảng chi tiết */
+#receiptDetailList, #warehouseDetailList, #itemListByDateTable {
+    margin-top: 20px;
+}
+
+/* Tiêu đề cho phần liệt kê */
+#itemListByDate p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Điều chỉnh kích thước các input trong phiếu kho */
+#warehouseId, #updateProductId, #updateProductPrice {
+    width: 60%;
+}
+
+/* Button cập nhật sản phẩm */
+#updateProductPrices button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#updateProductPrices button:hover {
+    background-color: #3498db;
+}
